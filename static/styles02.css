@@ -1,0 +1,10 @@
+body{
+    background: linear-gradient(420deg,pink,purple,aqua);
+}
+form{
+    margin-top: 150px;
+    background-color: grey;
+    border: 10px solid black;
+    height: 30vh;
+    width: 20rem;
+}

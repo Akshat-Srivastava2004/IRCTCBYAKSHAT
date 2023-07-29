@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Document</title>
+    <style>
+    body{
+        background: linear-gradient(420deg,darkturquoise,rgb(25, 98, 101));
+        padding: 0px;
+        margin: 0px;
+    }
+    #Navbar ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        border: 5px solid black;
+        background-color: darkturquoise;
+    }
+    #Navbar a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        margin-top:20px;
+    }
+    #blocks{
+        border: 5px solid rgba(76, 9, 97, 0.998);
+        width: 20rem;
+        height: 35vh;
+    }
+    #blocks a{
+        text-decoration: none;
+        border: 2px solid rebeccapurple;
+    }
+    a:hover{
+        background-color: rgb(182, 8, 159);
+        transition: 1s;
+    }
+    #block{
+        display: flex;
+        gap: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div id="Navbar">
+        <ul>
+            <h2 style="color: white;">Welcome</h2>
+            <a href="" style="margin-left: 1200px;">Home</a>
+            <a href="{% url 'login' %}" style="margin-right:10px;">Logout</a></li>
+        </ul>
+    </div>
+    <br>
+    {% for note in passengerinfo %}
+    <div id="block">
+    <div id="blocks">
+        <h3>{{note.id}}passenngername:{{note.passengername}}</h3>
+        <p><h3>Destination:{{note.Destination}}</h3></p>
+        <p><h3>Number of tickets:{{note.Tickets}}</h3></p>
+        <p><h3>Phone number:{{note.Phonenumber}}</h3></p>
+        <p><h3>Train number:{{note.Trainnumber}}</h3></p>
+       <center><a href="edit/{{note.id}}">EDIT</a>
+        <a href="delete/{{note.id}}">DELETE</a>
+    </div>
+    {% endfor %}
+       </center>
+    </div>
+</body>
+</html>

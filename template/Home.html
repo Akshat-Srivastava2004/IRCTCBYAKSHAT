@@ -1,0 +1,192 @@
+{% load static %}
+<html>
+<head>
+    <title>IRCTC WEBSITE BY AKSHAT</title>
+    <link href="th02.jpeg" rel="icon">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div id="mainblock">
+        <div id="Navbar">
+            <img src="{% static '/images/th01.jpeg' %}" width="80px">
+            <div id="centerelement">
+                <ul id="subparts01">
+                    <li><a href="" style="color: white; border: 10px solid darkblue;background-color: darkblue;">LOGIN</a></li>
+                    <li><a href="" style="color: black;">REGISTER</a></li>
+                    <li><a href="" style="color: black;">AGENT LOGIN</a></li>
+                    <li><a href="" style="color: black;">CONTACT US</a></li>
+                    <li><a href="" style="color: black;">ASK DIKSHA</a></li>
+                    <li><a href="" style="color: black;">ALERTS</a></li>
+                    <li><img src="{% static '/images/th02.jpeg' %}" style="width: 80px;margin-left: 500px;"></li>
+                </ul>
+                <ul id="subparts02">
+                   <li><img src="{% static '/images/home icon.svg.svg' %}" style="width: 20px;"></li>
+                   <li><a href="" style="color: white; border: 10px solid darkblue;background-color: darkblue;">IRCTC EXCLUSIVE</a></li>
+                   <li><a href="" style="color: red;"><u>TRAIN</u></a></li>
+                   <li><a href="" style="color: black;">BUSES</a></li>
+                   <li><a href="" style="color: black;">FLIGHTS</a></li>
+                   <li><a href="" style="color: black;">HOTELS</a></li>
+                   <li><a href="" style="color: black;">HOLIDAY</a></li>
+                   <li><a href="" style="color: black;">LOYALTY</a></li>
+                   <li><a href="" style="color: black;">MEALS</a></li>
+                   <li><a href="" style="color: black;">PROMOTIONS</a></li>
+                   <li><a href="" style="color: black;">MORE</a></li>
+                </ul>               
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+   <h1 style="color: darkblue;margin-left: 900px;font-size: 40px;">INDIAN RAILWAY</h1>
+  <h5 style="color: darkblue; margin-left: 930px;font-size: 20px;">Safety|Security|Punctuality</h5>
+   <form method="post">
+
+    {% csrf_token %}
+
+    <div id="formheading">
+        <ul>
+        <li><a href="" style="border: 4px solid darkblue;background-color: darkblue;">PNR STATUS</a></li>
+        <li><a href="" style="border: 4px solid darkblue;background-color: darkblue;">CHARTS/VACANCY</a></li>
+        </ul>
+    </div>
+    <label>
+        <div id="innerblock" style="height: 70vh;">
+            <div id="innerblock01">
+            <img src="{% static '/images/th05.jpg' %}" style="width: 200px; margin-left: 20px;height: 6vh;">
+            <h1 style="color: darkblue">BOOK TICKET</h1>
+            <img src="{% static '/images/G20_Logo.png' %}" style="width: 150px; margin-left: 40px;height: 6vh;">
+            </div>
+            <label for="nameuser01"><img src="{% static '/images/diagonal arrow.svg' %}"style="width: 15px;">From:</label>
+            <input type="text" name="unname" id="nameuser01">
+            <br>
+            <br>
+            <label for="nameuser02"><img src="{% static '/images/location-pin-map-svgrepo-com.svg' %}" style="width:15px">To:</label>
+            <input type="text" name="unname01" id="nameuser02">
+            <br>
+            <br>
+            <label>ALL CLASSES:</label>
+                <select>
+                    <option>CHOOSE</option>
+                    <option>FIRST AC</option>
+                    <option>SECOND AC</option>
+                    <option>THIRD AC</option>
+                    <option>SLEEPER</option>
+                    <option>GENERAL</option>
+                </select>
+            <br>
+            <br>
+            <label for="nameuser03">Date:</label>
+            <input type="date" name="unname02" id="nameuser03">
+            <br>
+            <br>
+            <label>gender:</label>
+            <select>
+                <option>CHOOSE</option>
+                <option>MALE</option>
+                <option>FEMALE</option>
+                <option>OTHER</option>
+            </select>
+            <br>
+            <br>
+            <select>
+                <option>GENERAL:</option>
+                <option>LADIES</option>
+                <option>LOWER BERTH/SR.CITIZEN</option>
+                <option>PERSON WITH DISABILITY</option>
+                <option>TATKAL</option>
+                <option>PREMIUM TATKAL</option>
+            </select>
+            <div id="lastitem">
+                <ul>
+                    <input type="checkbox"><h3>Person with disability consession</h3>
+                    <input type="checkbox"><h3>Flexible Date</h3>
+                </ul>
+                <div id="lastitem01">
+                    <ul>
+                        <input type="checkbox"><h3>Person with disability consession</h3>
+                        <input type="checkbox"><h3>Flexible Date</h3>
+                    </ul>
+                </div>
+            </div>
+            <br>
+           <center><button>Search Train</button></center>
+        </div>
+   </form>
+   <br>
+   <br>
+   <div id="lastbox">
+   <h4 style="color: red;">Customers are requested to contact only on IRCTC's authorised contact no./Email id (Contact No.:14646 OR 0755-6610661 / 0755-4090600, Email: care@irctc.co.in), for assistance regarding ticket booking, refund or forgot user-id/password. Beware of fraudulent sites offering assistance.</h4>
+   <h5 style="color: darkblue;">Please check the alert section regarding restoration of AC 3-tier economy fare.</h5>
+   </div>
+   <br>
+   <br>
+  <div id="secondpage">
+    <center><h1>HOLIDAY</h1></center>
+    <div id="secondpage01">
+         <ul>
+           <li><img src="{% static '/images/maharaja01.webp' %}"  style="width: 300px;border:4px solid black;"></li>
+           <div>
+            <h1>Maharajas' Express</h1>
+            <h3>Redefining Royalty, Luxury and Comfort, Maharajas' express takes you on a sojourn to the era of bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities are amalgamated for an “Experience Unsurpassed”. It has been a winner of “World’s Leading Luxury train” by World Travel Awards consecutively for last six years</h3>
+           </div>
+           <li><img src="{% static '/images/Prayagraj express.jpg' %}"  style="width: 320px;border:4px solid black;"></li>
+           <div>
+            <h1>Prayagraj Express</h1>
+            <h3>This article contains information about Prayagraj Express train route, Prayagraj Express train time table, Prayagraj Express train schedule, Prayagraj Express coach position, 12418 train route, 12418 train time table, 12418 train schedule, 12418 coach position, 12418 Stations, 12418 platform number, 12418 train platform. Also you will know train route from New to Allahabad, train schedule from New to Allahabad, train time table from New to Allahabad.</h3>
+           </div>
+         </ul>
+    </div>
+  <div id="thirdpage">
+    <ul>
+      <Li><img src="{% static '/images/bharat.jpg' %}"  style="width: 350px; border:4px solid black;"></Li>
+      <div>
+        <h1>Bharat Gaurav Tourist Train</h1>
+        <h3>IRCTC operates Bharat Gaurav Tourist Train having AC III-Tier accommodation on train specially designed to promote domestic tourism in India. This train runs on various theme based circuits covering pilgrimage and heritage destinations in its itinerary on a 5 days to 20 days trip and showcase India’s rich cultural heritage.</h3>
+      </div>
+      <li><img src="{% static '/images/Manali.jpg' %}"  style="width: 300px; border:4px solid black;"></li>
+      <div>
+        <h1>Rail Tour Packages</h1>
+        <h3>IRCTC offers Exclusive Rail tour packages with confirmed train tickets, sight-seeing and meals for enchanting Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok or divine tours of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday packages/ Land packages to these destinations are also available.</h3>
+      </div>
+    </ul>
+  </div>
+  <div id="footer">
+      <div id="footer01">
+          <ul>
+            <li><a href="" style="color: white;">IRCTC Trains</a></li>
+            <li><a href="" style="color: white;">General Information</a></li>
+            <Li><a href="" style="color: white;">Important Information</a></Li>
+            <li><a href="" style="color: white;">Agents</a></li>
+            <li><a href="" style="color: white;">Enquiries</a></li>
+          </ul>
+      </div>
+      <div id="footer02">
+        <ul>
+            <li><a href="" style="color: white;">How To</a></li>
+            <li><a href="" style="color: white;">IRCTC Official App</a></li>
+            <li><a href="" style="color: white;">Advertise with us</a></li>
+            <li><a href="" style="color: white">Refund Rules</a></li>
+            <li><a href="" style="color: white">Person With Disability Facilities</a></li>
+        </ul>
+      </div>
+      <div id="footer03">
+        <ul>
+            <li><a href="" style="color: white;">IRCTC eWallet</a></li>
+            <li><a href="" style="color: white;">IRCTC Loyalty Program</a></li>
+            <li><a href="" style="color: white;">IRCTC-iPAY Payment Gateway</a></li>
+            <li><a href="" style="color: white;">IRCTC Zone</a></Li>
+            <li><a href="" style="color: white;">About us</a></li>
+        </ul>
+      </div>
+      <div id="footer04">
+        <ul>
+            <li><img src="{% static '/images/insta.svg' %}"  style="width: 50px;"></li>
+            <li><img src="{% static '/images/linkedin.svg' %}"  style="width: 50px;"></li>
+            <li><img src="{% static '/images/tele.svg' %}"  style="width: 50px;"></li>
+            <li><img src="{% static '/images/whats.svg' %}" style="width: 50px;"></li>
+        </ul>
+      </div>
+  </div>
+  </div>
+</body>
+</html>

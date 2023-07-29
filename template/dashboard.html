@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            padding:0px ;
+            margin: 0px;
+        }
+        form{
+            margin-top: 40px;
+            width: 20rem;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: cornflowerblue;
+            border: 5px solid lightskyblue;
+        }
+        #Navbar ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        border: 5px solid black;
+        background-color: darkturquoise;
+    }
+    #Navbar a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        margin-top:20px;
+    }
+    </style>
+</head>
+<body>
+    <div id="Navbar">
+        <ul>
+            <h2 style="color: white;">Welcome {{user.first_name}}</h2>
+            <a href="" style="margin-left: 1200px;">Home</a>
+            <a href="Logout" style="margin-right:10px;">Logout</a></li>
+        </ul>
+    </div>
+    <br>
+    <center><h1 style="color: rgb(27, 105, 112); margin-top: 100px;"><u>ENTER THE PASSENGER DETAIL</u></h1></center>
+    <br>
+    <form method="post">
+
+        {% csrf_token %}
+        <label for="">Passenger name:</label>
+        <input type="text" name="pname" placeholder="enter Passenger name">
+        <br>
+        <br>
+        <label for="">Destination:</label>
+        <input type="text" name="des" placeholder="Enter the Destination">
+        <br>
+        <br>
+        <label for="">Number of tickets:</label>
+        <input type="number" name="num" placeholder=" Enter Number of tickets">
+        <br>
+        <br>
+        <label for="">Phone number:</label>
+        <input type="number" name="pnum" placeholder="Enter phone number ">
+        <br>
+        <br>
+        <label for="">train number:</label>
+        <input type="number" name="tnum" placeholder="Enter Train number ">
+        <br>
+        <br>
+       <center> <button type="submit">Submit</button></center>
+        
+
+    </form>
+</body>
+</html>
